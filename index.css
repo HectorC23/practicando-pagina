@@ -1,0 +1,364 @@
+/* 
+    PALETA DE COLORES
+
+    #252525
+    rgba(255,161,0,1)
+    rgba(251,16,61,1)
+*/
+@font-face {
+    font-family: NotoSansJP-Regular;
+    src: url(./fonts/NotoSansJP-Regular.otf);
+}
+* {
+    margin: 0%;
+    font-family: NotoSansJP-Regular;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #252525;
+    width: 100%;
+    min-width: 250px;
+    height: 250vh;
+    background-image: url(./assets/fondo-piedras.jpg);
+    background-size: cover;
+}
+
+        /* NAVBAR */
+
+.contenedor-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 5%;
+    width: 100%;
+}
+.contenedor-logo {
+    height: 100%;
+}
+.img-logo {
+    max-height: 100%;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.navbar-element-list {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0.2px 3px;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+}
+.navbar-element-list:hover {
+    border: 0.5px solid white;
+    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
+}
+
+        /*  Secciones */
+
+.contenedor-secciones {
+    height: 90%;
+    width: 100%;
+    color: white;
+}
+
+    /*  PRIMERA SECCION */
+
+.contenedor-nosotros {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    /* border: 1px solid red; */
+}
+
+.titulo-nosotros {
+    font-size: 3.5em;
+    color: rgba(255,161,0,1);
+    text-shadow: 0px 0px 10px rgba(251,16,61,1);
+}
+.subtitulo-nosotros {
+    font-size: 2.5em;
+    color: rgba(255,161,0,1);
+    text-shadow: 0px 0px 10px rgba(251,16,61,1);
+}
+
+    /* segunda seccion */
+
+.contenedor-menu {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* background-color: rgba(255, 162, 0, 0.884); */
+}
+.contenedor-titulo-menu {
+    display: flex;
+    justify-content: center;
+    
+}
+.titulo-menu {
+    font-size: 3em;
+    
+    text-shadow: 0px 0px 7px rgba(251,16,61,1);
+}
+.titulo-menu:hover {
+    text-decoration:underline rgba(251,16,61,1);
+}
+.contenedor-cards-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.menu-card {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 30px;
+}
+.menu-card:hover {
+    /* background-color: rgba(255,161,0,1); */
+    background-color: rgba(251,16,61,1);
+    box-shadow: 0px 0px 40px 2px rgba(251,16,61,1);
+}
+.cont-menu-card-img {
+    height: 90px;
+}
+.menu-card-img {
+    max-height: 100%;
+}
+.menu-card-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+}
+.title-card-description {
+    font-size: 1em;
+}
+.text-description {
+    font-size: 0.8em;
+}
+.button-description {
+    font-size: 1em;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 1px 8px;
+}
+.button-description:hover {
+    /* color: rgba(251,16,61,1); */
+    color: white;
+    border: 2px solid white;
+    background: linear-gradient(90deg, rgba(255,161,0,1) 0%, rgba(251,16,61,1) 100%);
+    /* background-color: rgba(255,161,0,1);
+    border: 2px solid rgba(255,161,0,1); */
+}
+
+    /* tercera seccion */
+
+.contenedor-contacto {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenedor-titulo-contacto {
+    display: flex;
+    align-items: center;
+}
+.titulo-contacto {
+    font-size: 2.5em;
+    text-shadow: 0px 0px 7px rgba(251,16,61,1);
+}
+.titulo-contacto:hover {
+    text-decoration:underline rgba(251,16,61,1);
+}
+.contenedor-texto-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    
+}
+.contenedor-texto-contacto p {
+    background-color: rgba(251,16,61,1);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+    /* footer */
+
+.footer {
+    height: 5%;
+    width: 100%;
+    /* background: linear-gradient(180deg, rgba(37,37,37,1) 0%, rgba(251,16,61,1) 50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-footer {
+    max-height: 50px;
+}
+
+    /* MEDIA CUERIS */
+
+@media (min-width: 425px) {
+    .titulo-nosotros {
+        font-size: 4.5em;
+    }
+    .subtitulo-nosotros {
+        font-size: 3em;
+    }
+    .menu-card {
+        width: 70%;
+    }
+}
+
+@media (min-width: 550px) {
+    .navbar {
+        width: 50%;
+    }
+    .navbar-list {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navbar-element-list {
+        font-size: 1em;
+        padding: 1px 10px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+    }
+    .navbar-element-list:hover {
+        border: 1px solid white;
+    }
+    .titulo-nosotros {
+        font-size: 5.5em;
+    }
+    .subtitulo-nosotros {
+        font-size: 4em;
+    }
+    .menu-card {
+        width: 60%;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .navbar-element-list {
+        font-size: 1.4em;
+        padding: 2px 15px;
+        border-radius: 15px;
+    }
+    .titulo-nosotros {
+        font-size: 6.5em;
+    }
+    .subtitulo-nosotros {
+        font-size: 5em;
+    }
+    .titulo-menu {
+        font-size: 4em;
+    }
+    .contenedor-cards-menu {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 70%;
+        gap: 10px;
+    }
+    .menu-card {
+        height: 40%;
+        width: 40%;
+    }
+    .cont-menu-card-img {
+        height: 120px;
+    }
+    .titulo-contacto {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .titulo-nosotros {
+        font-size: 8em;
+    }
+    .menu-card {
+        height: 50%;
+        width: 40%;
+    }
+    .cont-menu-card-img {
+        height: 200px;
+    }
+    .title-card-description {
+        font-size: 1.5em;
+    }
+    .text-description {
+        font-size: 1.2em;
+    }
+    .button-description {
+        font-size: 1.5em;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        padding: 1px 15px;
+    }
+}
+
+@media (min-width: 1560px) {
+    .titulo-nosotros {
+        font-size: 8em;
+    }
+    .menu-card {
+        height: 50%;
+        width: 40%;
+    }
+    .cont-menu-card-img {
+        height: 200px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .titulo-nosotros {
+        font-size: 15em;
+    }
+    .subtitulo-nosotros {
+        font-size: 10em;
+    }
+    .titulo-menu {
+        font-size: 6em;
+    }
+    .menu-card {
+        height: 50%;
+        width: 40%;
+    }
+    .cont-menu-card-img {
+        height: 70%;
+        width: 100%;
+    }
+    .menu-card-img {
+        object-fit: contain;
+        width: 100%;
+    }
+    .titulo-contacto {
+        font-size: 6em;
+    }
+}
